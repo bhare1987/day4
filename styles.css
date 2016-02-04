@@ -299,11 +299,11 @@ header {
   background-repeat: no-repeat;
   background-position-y: 96%;
   width: 100%;
-  height: 48.5%;
+  height: 48%;
   display: inline-block;
   box-sizing: border-box;
   border: 4px solid #fff;
-  margin-top: 2%;
+  margin-top: 1.5%;
   position: relative;
 }
 
@@ -350,3 +350,5 @@ header {
 .skateboards ul li img {
   width: 75%;
 }
+
+/* Contact Us Styles */
