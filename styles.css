@@ -28,46 +28,78 @@ header {
 }
 /* Subscribe Nav Styles */
 
+.subscribe {
+  position: relative;
+  height: 50px;
+}
+
 .subscribe span {
   color: #fff;
   font-size: .8em;
+  position: absolute;
+  right: 30%;
+  top: 25%;
 }
 
 .subscribe span i {
   font-size: 4px;
   vertical-align: middle;
+  margin-left: 15px;
 }
 
 .subscribe ul {
   list-style-type: none;
   display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  position: absolute;
+  right: 0;
 }
 
 .subscribe ul:before {
-  font-family:fontawesome;
-  display: inline-block;
-  transform: rotate(90deg);
   content: '\f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111';
   transform: rotate(90deg);
   font-size: 4px;
-}
-
-.subscribe ul li {
+  font-family:fontawesome;
   display: inline-block;
+  margin-top: 17px;
+  vertical-align: top;
 }
 
-.subscribe ul li:nth-child(1) {
+.subscribe ul a li {
+  display: inline-block;
+  padding: 5px 10px;
+  border-bottom: 2px solid lightgray;
+  width: 20px;
+  text-align: center;
+}
+
+.subscribe ul a:hover li i {
+  opacity: 1;
+}
+
+.subscribe ul a:nth-child(1) li {
   background-color: rgb(59,89,152);
 }
 
-.subscribe ul li:nth-child(2) {
+.subscribe ul a:nth-child(2) li {
   background-color: rgb(242,101,34);
 }
 
-.subscribe ul li:nth-child(3) {
+.subscribe ul a:nth-child(3) li {
   background-color: rgb(64,153,255);
 }
 
-.subscribe ul li:nth-child(4) {
+.subscribe ul a:nth-child(4) li {
   background-color: rgb(205,32,31);
+}
+
+.subscribe ul a {
+  text-decoration: none;
+  color: #fff;
+}
+.subscribe ul a li i {
+  opacity: .5;
+  font-size: 1.5em;
 }
