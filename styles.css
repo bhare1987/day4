@@ -176,3 +176,9 @@ header {
   margin-top: 7%;
   margin-left: 2%;
 }
+
+.carousel-buttons {
+  text-align: center;
+  font-size: .8em;
+  margin-top: 10px;
+}
