@@ -129,6 +129,7 @@ header {
   text-align: center;
   color: #fff;
   padding: 4px;
+  border-bottom: 2px solid transparent;
 }
 
 .main-nav ul a li:before, .main-nav ul a li:after {
@@ -150,4 +151,28 @@ header {
 
 .main-nav ul a li:hover {
   border-bottom: 2px solid lightgray;
+}
+
+/*Carousel Styles*/
+
+.carousel {
+  background-image: url('./images/top-image.png');
+  background-size: 152%;
+  background-position-x: -133px;
+  background-position-y: -121px;
+  width: 100%;
+  height: 300px;
+  border: 7px solid #fff;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.logo {
+  background-image: url('./images/peralta-logo.png');
+  width: 43%;
+  height: 70%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 7%;
+  margin-left: 2%;
 }
