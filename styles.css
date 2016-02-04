@@ -198,6 +198,7 @@ header {
   background-color: #fff;
   padding: 10px;
   box-sizing: border-box;
+  vertical-align: top;
 }
 
 .articles article:last-child {
@@ -233,6 +234,7 @@ header {
 .skaters {
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .skater-right {
@@ -240,6 +242,7 @@ header {
   width: 32%;
   height: 350px;
   vertical-align: top;
+  margin-left: 1.4%;
 }
 
 .skater-right > div {
@@ -252,6 +255,7 @@ header {
   display: inline-block;
   box-sizing: border-box;
   border: 4px solid #fff;
+  position: relative;
 }
 
 .skater-left {
@@ -263,25 +267,55 @@ header {
 
 .skater-left > div:nth-child(1) {
   background-image: url('./images/sk8er-4.png');
-  width: 48%;
-  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  width: 48.5%;
+  height: 49%;
   display: inline-block;
   box-sizing: border-box;
+  border: 4px solid #fff;
+  position: relative;
 }
+
 .skater-left > div:nth-child(2) {
   background-image: url('./images/sk8er-3.png');
-  width: 48%;
-  height: 50%;
+  background-size: cover;
+  width: 48.5%;
+  height: 49%;
   display: inline-block;
   box-sizing: border-box;
+  border: 4px solid white;
+  margin-left: 2%;
+  position: relative;
 }
+
 .skater-left > div:nth-child(3) {
   background-image: url('./images/sk8er-1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 96%;
   width: 100%;
-  height: 50%;
+  height: 48.5%;
   display: inline-block;
   box-sizing: border-box;
+  border: 4px solid #fff;
+  margin-top: 2%;
+  position: relative;
+}
+
+.skaters span {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  display: inline-block;
+  line-height: 1;
+  position: absolute;
+  top: 35%;
+}
+
+.skater-left div:nth-child(3) span {
+  left: 20%;
 }
