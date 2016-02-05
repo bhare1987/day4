@@ -352,3 +352,108 @@ header {
 }
 
 /* Contact Us Styles */
+
+.contact {
+  background-color: #fff;
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.contact-details {
+  width: 48%;
+  display: inline-block;
+  padding-left: 1%;
+  vertical-align: top;
+}
+
+.contact-details h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.contact-details p {
+  font-family: "Open Sans", sans-serif;
+  font-size: .75em;
+}
+
+.contact-details ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.contact-details ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .8em;
+}
+
+.contact-details ul a li {
+  display: inline-block;
+  padding: 4px;
+  width: 12px;
+  text-align: center;
+}
+
+.contact-details ul a:nth-child(1) li {
+  background-color: rgb(59,89,152);
+}
+
+.contact-details ul a:nth-child(2) li {
+  background-color: rgb(242,101,34);
+}
+
+.contact-details ul a:nth-child(3) li {
+  background-color: rgb(64,153,255);
+}
+
+.contact-details ul a:nth-child(4) li {
+  background-color: rgb(205,32,31);
+}
+
+.contact-form {
+  width: 48%;
+  display: inline-block;
+  margin-top: 1.5%;
+}
+
+.contact-form input, .contact-form button {
+  display: block;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 3%;
+  border-top: 3px lightgray inset;
+  border-left: 3px lightgray inset;
+  box-sizing: border-box;
+}
+
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 1%;
+}
+
+textarea {
+  resize: none;
+  border-bottom: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+}
+
+.contact-form button {
+  background-color: #B4292E;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  width: 50%;
+  padding: 2%;
+  margin-left: 50%;
+  box-sizing: border-box;
+  font-weight: 200;
+}
