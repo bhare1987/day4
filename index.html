@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,700,800,300italic,400italic,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
-
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   </head>
   <body>
     <div class="background-overlay"></div>
@@ -55,12 +55,14 @@
         </nav>
         <div class="carousel-container">
           <div class="carousel box-shadow">
-            <div class="logo"></div>
+            <div class="carousel1">
+              <figure class="logo"></figure>
+            </div>
           </div>
           <div class="carousel-buttons">
-            <i class="fa fa-dot-circle-o"></i>
-            <i class="fa fa-circle"></i>
-            <i class="fa fa-circle"></i>
+            <i data-img="carousel1" class="fa fa-dot-circle-o"></i>
+            <i data-img="carousel2" class="fa fa-circle"></i>
+            <i data-img="carousel3" class="fa fa-circle"></i>
           </div>
         </div>
       </header>
@@ -169,5 +171,6 @@
         </div>
       </section>
     </section>
+    <script src="carousel.js"></script>
   </body>
 </html>

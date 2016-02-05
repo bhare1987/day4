@@ -157,15 +157,37 @@ header {
 /* Carousel Styles */
 
 .carousel {
+  position: relative;
+  height: 300px;
+  border: 7px solid #fff;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.carousel1{
   background-image: url('./images/top-image.png');
   background-size: 152%;
   background-position-x: -133px;
   background-position-y: -121px;
   width: 100%;
-  height: 300px;
-  border: 7px solid #fff;
-  margin-top: 10px;
-  box-sizing: border-box;
+  height: 100%;
+}
+
+.carousel2 {
+  background-image: url('./images/sk8er-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel3 {
+  background-image: url('./images/sk8er-4.png');
+  background-size: 122%;
+  background-position-x: -154px;
+  background-position-y: -73px;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -174,14 +196,19 @@ header {
   height: 70%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 7%;
-  margin-left: 2%;
+  position: absolute;
+  top: 14%;
+  left: -4%
 }
 
 .carousel-buttons {
   text-align: center;
   font-size: .8em;
   margin-top: 15px;
+}
+
+.carousel-buttons i:hover {
+  cursor: pointer;
 }
 
 /* Article Styles */
@@ -438,6 +465,14 @@ header {
   text-align: center;
 }
 
+.contact-details ul a li {
+  opacity: .5;
+}
+
+.contact-details ul a:hover li {
+  opacity: 1;
+}
+
 .contact-details ul a:nth-child(1) li {
   background-color: rgb(59,89,152);
 }
@@ -537,10 +572,23 @@ textarea {
   }
 
   .carousel {
+  }
+
+  .carousel1 {
     background-size: 179%;
     background-position-x: -137px;
     background-position-y: 0px;
     background-repeat: no-repeat;
+  }
+
+  .carousel2 {
+    background-position-x: -150px;
+  }
+
+  .carousel3 {
+    background-repeat: no-repeat;
+    background-size: 221%;
+    background-position-x: -313px;
   }
 
   .articles article {
