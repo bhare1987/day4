@@ -1,0 +1,25 @@
+.skateboards {
+  background-color: #fff;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.skateboards ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.skateboards ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-right: .5%;
+}
+
+.skateboards ul li img {
+  width: 75%;
+}

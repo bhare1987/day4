@@ -1,0 +1,117 @@
+header {
+  font-family: $fontFamily;
+  color: #fff;
+}
+
+.subscribe {
+  position: relative;
+  height: 50px;
+  span {
+    color: #fff;
+    font-size: .7em;
+    position: absolute;
+    right: 34%;
+    top: 25%;
+    i {
+      font-size: 4px;
+      vertical-align: middle;
+      margin-left: 15px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    a {
+      text-decoration: none;
+      color: #fff;
+      li {
+        display: inline-block;
+        padding: 10px;
+        width: 20px;
+        text-align: center;
+        i {
+          opacity: .5;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  ul:before {
+    content: '\f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111';
+    transform: rotate(90deg);
+    font-size: 4px;
+    font-family:fontawesome;
+    display: inline-block;
+    margin-top: 17px;
+    vertical-align: top;
+  }
+}
+
+.subscribe ul a:hover li {
+  box-shadow: 0px 2px rgba(255,255,255,1);
+}
+
+.subscribe ul a:hover li i {
+  opacity: 1;
+}
+
+.subscribe ul a:nth-child(1) li {
+  background-color: rgb(59,89,152);
+}
+
+.subscribe ul a:nth-child(2) li {
+  background-color: rgb(242,101,34);
+}
+
+.subscribe ul a:nth-child(3) li {
+  background-color: rgb(64,153,255);
+}
+
+.subscribe ul a:nth-child(4) li {
+  background-color: rgb(205,32,31);
+}
+
+/* Main Nav Styles */
+
+.main-nav {
+  margin-top: 10px;
+  font-size: .8em;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    a li {
+      display: inline-block;
+      width: 23.5%;
+      background-color: #B4292E;
+      text-align: center;
+      color: #fff;
+      padding: 4px;
+    }
+  }
+}
+
+.main-nav ul
+
+.main-nav ul a li:before, .main-nav ul a li:after {
+  content: '\2014';
+  font-family: 'Open Sans';
+  font-weight: bolder;
+}
+
+.main-nav ul a li:before {
+  margin-right: 10px;
+}
+
+.main-nav ul a li:after {
+  margin-left: 10px;
+}
+
+.main-nav ul a li:hover {
+  box-shadow: 0px 2px rgba(255,255,255,1);
+}

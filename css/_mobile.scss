@@ -1,0 +1,161 @@
+@media (max-width: 760px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .main-container {
+    width: 320px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+  }
+
+  .subscribe span {
+    right: 75%;
+  }
+
+  .subscribe span i {
+    margin-left: 5px;
+  }
+
+  .main-nav ul a li {
+    width: 45%;
+    margin-right: 3.5%;
+  }
+
+  .main-nav ul a:nth-child(even) li {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .main-nav ul a li:before, .main-nav ul a li:after {
+    display: none;
+  }
+
+  .carousel1 {
+    background-size: 179%;
+    background-position-x: -137px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+  }
+
+  .carousel2 {
+    background-position-x: -150px;
+  }
+
+  .carousel3 {
+    background-repeat: no-repeat;
+    background-size: 221%;
+    background-position-x: -313px;
+  }
+
+  .articles article {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .skater-left {
+    width: 100%;
+  }
+
+  .skater-right {
+    width: 100%;
+    margin-left: 0;
+    height: 112px;
+  }
+
+  .skater-right > div {
+    background-image: url('../images/sk8er-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 78%;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    position: relative;
+  }
+
+  .skater-left > div:nth-child(1) {
+    background-image: url('../images/sk8er-4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    width: 100%;
+    height: 32%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    position: relative;
+  }
+
+  .skater-left > div:nth-child(2) {
+    background-image: url('../images/sk8er-3.png');
+    background-size: cover;
+    background-position-y: 50%;
+    width: 100%;
+    height: 32%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 4px solid white;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .skater-left > div:nth-child(3) {
+    background-image: url('../images/sk8er-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 96%;
+    width: 100%;
+    height: 32%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .skaters span {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1em;
+    font-weight: 900;
+    text-align: center;
+    display: inline-block;
+    line-height: 1;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+
+  .skater-left div:nth-child(3) span {
+    left: 10%;
+  }
+
+  .contact-details {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-details ul a {
+    font-size: 1em;
+  }
+
+  .contact-details ul a li {
+    display: inline-block;
+    padding: 4px;
+    width: 21%;
+}
+
+}
