@@ -1,6 +1,6 @@
 .articles {
   margin-top: 15px;
-  font-family: "Open Sans";
+  font-family: $fontFamily;
   article {
     display: inline-block;
     width: 32%;
@@ -10,6 +10,9 @@
     padding: 10px;
     box-sizing: border-box;
     vertical-align: top;
+    &:last-child {
+      margin-right: 0;
+    }
     h2 {
       margin-top: 10px;
       margin-bottom: 10px;
@@ -32,8 +35,5 @@
       color: #B4343B;
       font-weight: bold;
     }
-  }
-  article:last-child {
-    margin-right: 0;
   }
 }

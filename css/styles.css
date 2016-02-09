@@ -8,15 +8,15 @@
 .mobile {
   display: none; }
 
+.box-shadow {
+  box-shadow: 0px 2px rgba(255, 255, 255, 0.25); }
+
 body {
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Open Sans", sans-serif;
   margin: 0; }
-
-.box-shadow {
-  box-shadow: 0px 2px rgba(255, 255, 255, 0.25); }
 
 .background-overlay {
   position: fixed;
@@ -52,9 +52,29 @@ header {
     margin-top: 5px;
     position: absolute;
     right: 0; }
+    .subscribe ul:before {
+      content: '\f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111';
+      transform: rotate(90deg);
+      font-size: 4px;
+      font-family: fontawesome;
+      display: inline-block;
+      margin-top: 17px;
+      vertical-align: top; }
     .subscribe ul a {
       text-decoration: none;
       color: #fff; }
+      .subscribe ul a:hover li {
+        box-shadow: 0px 2px white; }
+        .subscribe ul a:hover li i {
+          opacity: 1; }
+      .subscribe ul a:nth-child(1) li {
+        background-color: #3b5998; }
+      .subscribe ul a:nth-child(2) li {
+        background-color: #f26522; }
+      .subscribe ul a:nth-child(3) li {
+        background-color: #4099ff; }
+      .subscribe ul a:nth-child(4) li {
+        background-color: #cd201f; }
       .subscribe ul a li {
         display: inline-block;
         padding: 10px;
@@ -63,32 +83,6 @@ header {
         .subscribe ul a li i {
           opacity: .5;
           font-size: 1.5em; }
-  .subscribe ul:before {
-    content: '\f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111 \00a0 \00a0 \f111';
-    transform: rotate(90deg);
-    font-size: 4px;
-    font-family: fontawesome;
-    display: inline-block;
-    margin-top: 17px;
-    vertical-align: top; }
-
-.subscribe ul a:hover li {
-  box-shadow: 0px 2px white; }
-
-.subscribe ul a:hover li i {
-  opacity: 1; }
-
-.subscribe ul a:nth-child(1) li {
-  background-color: #3b5998; }
-
-.subscribe ul a:nth-child(2) li {
-  background-color: #f26522; }
-
-.subscribe ul a:nth-child(3) li {
-  background-color: #4099ff; }
-
-.subscribe ul a:nth-child(4) li {
-  background-color: #cd201f; }
 
 /* Main Nav Styles */
 .main-nav {
@@ -105,21 +99,16 @@ header {
       text-align: center;
       color: #fff;
       padding: 4px; }
-
-.main-nav ul
-.main-nav ul a li:before, .main-nav ul a li:after {
-  content: '\2014';
-  font-family: 'Open Sans';
-  font-weight: bolder; }
-
-.main-nav ul a li:before {
-  margin-right: 10px; }
-
-.main-nav ul a li:after {
-  margin-left: 10px; }
-
-.main-nav ul a li:hover {
-  box-shadow: 0px 2px white; }
+      .main-nav ul a li:before, .main-nav ul a li:after {
+        content: '\2014';
+        font-family: 'Open Sans';
+        font-weight: bolder; }
+      .main-nav ul a li:before {
+        margin-right: 10px; }
+      .main-nav ul a li:after {
+        margin-left: 10px; }
+      .main-nav ul a li:hover {
+        box-shadow: 0px 2px white; }
 
 .grid {
   background-image: url("../images/grid.png");
@@ -184,7 +173,7 @@ header {
 
 .articles {
   margin-top: 15px;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans", sans-serif; }
   .articles article {
     display: inline-block;
     width: 32%;
@@ -194,6 +183,8 @@ header {
     padding: 10px;
     box-sizing: border-box;
     vertical-align: top; }
+    .articles article:last-child {
+      margin-right: 0; }
     .articles article h2 {
       margin-top: 10px;
       margin-bottom: 10px;
@@ -212,8 +203,6 @@ header {
       display: block;
       color: #B4343B;
       font-weight: bold; }
-  .articles article:last-child {
-    margin-right: 0; }
 
 .skaters {
   position: relative;
@@ -385,6 +374,16 @@ header {
       text-decoration: none;
       color: #fff;
       font-size: .8em; }
+      .contact-details ul a:hover li {
+        opacity: 1; }
+      .contact-details ul a:nth-child(1) li {
+        background-color: #3b5998; }
+      .contact-details ul a:nth-child(2) li {
+        background-color: #f26522; }
+      .contact-details ul a:nth-child(3) li {
+        background-color: #4099ff; }
+      .contact-details ul a:nth-child(4) li {
+        background-color: #cd201f; }
       .contact-details ul a li {
         display: inline-block;
         padding: 4px;
@@ -392,59 +391,38 @@ header {
         text-align: center;
         opacity: .5; }
 
-.contact-details ul a:hover li {
-  opacity: 1; }
-
-.contact-details ul a:nth-child(1) li {
-  background-color: #3b5998; }
-
-.contact-details ul a:nth-child(2) li {
-  background-color: #f26522; }
-
-.contact-details ul a:nth-child(3) li {
-  background-color: #4099ff; }
-
-.contact-details ul a:nth-child(4) li {
-  background-color: #cd201f; }
-
 .contact-form {
   width: 48%;
   display: inline-block;
   margin-top: 1.5%; }
-
-.contact-form input, .contact-form button {
-  display: block; }
-
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 3%;
-  border-top: 3px lightgray inset;
-  border-left: 3px lightgray inset;
-  box-sizing: border-box; }
-
-.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
-  font-family: "Open Sans", sans-serif;
-  padding-left: 1%; }
-
-textarea {
-  resize: none;
-  border-bottom: 2px solid lightgray;
-  border-right: 2px solid lightgray; }
-
-.contact-form button {
-  background-color: #B4292E;
-  border-radius: 0;
-  border: 0;
-  color: #fff;
-  width: 50%;
-  padding: 2%;
-  margin-left: 50%;
-  box-sizing: border-box;
-  font-weight: 200; }
-
-.contact-form button:hover {
-  cursor: pointer; }
+  .contact-form input, .contact-form button {
+    display: block; }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 3%;
+    border-top: 3px lightgray inset;
+    border-left: 3px lightgray inset;
+    box-sizing: border-box; }
+    .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+      font-family: "Open Sans", sans-serif;
+      padding-left: 1%; }
+  .contact-form textarea {
+    resize: none;
+    border-bottom: 2px solid lightgray;
+    border-right: 2px solid lightgray; }
+  .contact-form button {
+    background-color: #B4292E;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    width: 50%;
+    padding: 2%;
+    margin-left: 50%;
+    box-sizing: border-box;
+    font-weight: 200; }
+    .contact-form button:hover {
+      cursor: pointer; }
 
 @media (max-width: 760px) {
   .desktop {
