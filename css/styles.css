@@ -223,26 +223,24 @@ header {
   font-weight: bold;
   padding-right: 0;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.25); }
-
-.banner::before {
-  content: '';
-  width: 0;
-  height: 0;
-  border: 30px solid transparent;
-  border-left: 18px solid rgba(255, 255, 255, 0.25);
-  position: absolute;
-  right: -49px;
-  top: 2px; }
-
-.banner::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border: 30px solid transparent;
-  border-left: 18px solid #B4292E;
-  position: absolute;
-  right: -48px;
-  top: 0; }
+  .banner::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-left: 18px solid rgba(255, 255, 255, 0.25);
+    position: absolute;
+    right: -49px;
+    top: 2px; }
+  .banner::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-left: 18px solid #B4292E;
+    position: absolute;
+    right: -48px;
+    top: 0; }
 
 .skater-right {
   display: inline-block;
@@ -327,23 +325,20 @@ header {
   background-color: #fff;
   padding: 5px;
   margin-bottom: 30px; }
-
-.skateboards ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  padding-left: 5px;
-  padding-right: 5px; }
-
-.skateboards ul li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-right: .5%; }
-
-.skateboards ul li img {
-  width: 75%; }
+  .skateboards ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .skateboards ul li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      margin-right: .5%; }
+      .skateboards ul li img {
+        width: 75%; }
 
 .contact {
   background-color: #fff;
@@ -436,8 +431,8 @@ header {
     box-sizing: border-box; }
   .subscribe span {
     right: 75%; }
-  .subscribe span i {
-    margin-left: 5px; }
+    .subscribe span i {
+      margin-left: 5px; }
   .main-nav ul a li {
     width: 45%;
     margin-right: 3.5%; }
